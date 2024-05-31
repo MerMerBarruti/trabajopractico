@@ -1,3 +1,5 @@
+/*Tomé los ejemplos en clase para el desarrollo no por no entenerlos sino por falta de tiempo y de salud mental
+para el desarrollo de la lógica. sepan disculpar. no la estoy pasando bien. gracias.*/
 // Espera a que el DOM se cargue completamente
 document.addEventListener('DOMContentLoaded', () => {
     // Selecciona el formulario en el DOM
