@@ -1,0 +1,129 @@
+#contenedorsecciondetalles{
+    height: 70vh;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    padding-top: 50px;
+    background: linear-gradient(to right top, #6d6969a7, #6d6969a7),url(images/fondodetalle.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+
+#contenedordetalles{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.imagendetalle{
+    display: block;
+    border-radius: 20px;
+    height: 100%;
+    width: 300px;
+}
+
+.creditos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    row-gap: 10px;
+    
+}
+
+#segundaseccion{
+    font-family: "Nunito", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 60px;
+    width: 75%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contenedorinfo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 48px;
+}
+
+.redes a{
+    text-decoration: none!important;
+    color: white!important;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    display: block;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+h2{
+    margin: 20px 0px 0px 0px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3{
+    margin: 20px 0px 0px 0px;
+}
+
+.detalles{
+    width: 50vw;
+}
+
+.detalletabla{
+    display: flex;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.titulotabla{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.titulo{
+    font-weight: bolder;
+}
+
+.dato{
+    text-align: left;
+}
+
+table{
+    width: 50vh;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.marca:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}

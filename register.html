@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcc5287154.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <header>
+        <nav class="navegacion">
+            <a href="#" class="marca"><i class="fa-solid fa-film"></i> CAC-Movies</a>
+        </nav>
+    </header>
+    <main>
+        <section data-aos="fade-up" id="registro">
+            <form action="">
+                <h2>Registro</h2>
+                <div>
+                    <input class="inputtextual" type="text" placeholder="Nombre">
+                </div>
+                <div>
+                    <input class="inputtextual" type="text" placeholder="Apellido">
+                </div>
+                <div>
+                    <input class="inputtextual" type="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <input class="inputtextual" type="password" placeholder="Contraseña">
+                </div>
+                <div class="divfix">
+                    <input class="inputtextual" type="date" placeholder="Fecha de nacimiento (dd/mm/aaaa)">
+                </div>
+                <div class="divfix">
+                    <select class="inputtextual" name="pais" id="pais">
+                        <option value="pais"> País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <div class="divfix">
+                    <div>
+                        <input class="inputcheckbox" type="checkbox" id="terminos" value="Iniciar Sesión">
+                        <label class="checklabel" for="terminos">
+                            Acepto los términos y condiciones
+                        </label>
+                    </div>
+                </div>
+                <div class="divfix">
+                    <input class="inputboton" type="submit" value="Registrarme">
+                </div>
+                <div class="divfix">
+                    <a href="#">¿Necesitás ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

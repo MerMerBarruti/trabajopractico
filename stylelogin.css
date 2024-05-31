@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right top, #24242473,#24242473),url(images/fondologin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Nunito", sans-serif;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+}
+
+.navegacion {
+    width: 100%;
+    margin: 0;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding-left: 40px;
+    font-family: "Nunito", sans-serif;
+}
+
+.marca{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#login{
+    color: white;
+    margin: auto;
+    width: 30vw;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-top: 20px;
+    /*padding: 40px;*/
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.inputtextual{
+    border-radius: 25px;
+    width: 100%;
+    background: #333333;
+    border-color: #9f3647;
+    border-style: solid;
+    color: white;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+::placeholder{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+form a{
+    text-decoration: none;
+    color: #787878;
+}
+
+.divfix{
+    display: flex;
+}
+
+.divfix2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.inputboton{
+    text-align: center;
+    font-size: 1.05rem;
+    color: white;
+    border: solid #9f3647;
+    border-radius: 9px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: #9f3647;
+    font-weight: 500;
+}
+
+input[type=date]{
+    padding-left: 20px;
+    width: 100%;
+}
+
+select{
+    border-radius: 25px;
+    background: #333333;
+    border-color: #9f3647;
+    border-style: solid;
+    color: white;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.inputcheckbox{
+    margin-top: 20px;
+}
+
+#registro{
+    color: white;
+    margin: auto;
+    width: 30vw;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-top: 20px;
+    /*padding: 40px;*/
+}
+
+#registro h2{
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #login {
+      width: 95vw;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem!important;
+    }
+    .inputboton{
+        margin-top: 40px!important;
+        font-weight: 50!important;
+        width: 90%!important;
+        font-size: 1rem!important;
+        padding: 5px!important;
+    }
+    form a{
+        margin-top: 20px;
+    }
+    #registro{
+        width: 95vw!important;
+    }
+    .divfix{
+        justify-content: center!important;
+    }
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.marca:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}

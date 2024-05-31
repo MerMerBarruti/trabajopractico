@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcc5287154.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styleapi.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <header>
+        <nav class="navegacion">
+            <a href="#" class="marca"><i class="fa-solid fa-film"></i> CAC-Movies</a>
+            <ul>
+                <li class="objetodenav"><a href="#" class="linkdelista">Tendencias</a></li>
+                <li class="objetodenav"><a href="#" class="linkdelista">Registrate</a></li>
+                <li class="objetodenavespecial"><a href="#" class="linkdelista">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="principal">
+            <h1>
+                Peliculas y series ilimitadas
+                <br>
+                En un sólo lugar
+            </h1>
+            <h2>
+                Disfruta donde quieras.
+                <br>
+                Cancela en cualquier momento.
+            </h2>
+            <button id="botonbootstrap" class="btn btn-primary">Registrate</button>
+        </section>
+        <section data-aos="fade-up" id="buscador">
+            <h2>que estas buscando</h2>
+            <form class="buscador">
+                <input class="buscadorinput" type="text" placeholder="Buscar...">
+                <input class="inputbotonregistrarse" type="submit" value="Buscar">
+            </form>
+        </section>
+        <hr>
+        <section data-aos="fade-up" id="tendencias">
+            <!--<h3>Las tendencias de hoy</h3>-->
+            <h3 class="mb-5 mt-5 text-center m-auto titular">Las tendencias de hoy</h3>
+            <!-- * -->
+            <div class="contenedorflex">
+                <div class="itemflex">
+                    
+                    <div class="contenedor" id="contenedor"></div>
+        
+                </div>
+            </div>
+            <div class="paginacion">
+                <button id="btnAnterior" class="boton btn btn-primary m-2 p-1">Anterior</button>
+                <button id="btnSiguiente" class="boton btn btn-primary m-2 p-1">Siguiente</button>
+            </div>
+            <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+            <script src="validacion.js"></script>
+            <!-- * -->
+
+            <!--<div class="contenedorflex">
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost world</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="detalle.html">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="boton">Anterior</button>
+            <button class="boton">Siguiente</button>-->
+        </section>
+        <hr>
+        <section data-aos="fade-up" id="aclamadas">
+            <h3>Las mas aclamadas</h3>
+            <div class="contenedoraclamadas">
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemflex">
+                    <a href="#">
+                        <div class="pelicula">
+                            <img src="images/moviecoverph.jpg" alt="portadapelicula">
+                            <div class="titulopelicula">
+                                <h4>Ghost World</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="navegacionfooter">
+            <ul>
+                <li class="objetodenav"><a href="#" class="linkdelista">Terminos y condiciones</a></li>
+                <li class="objetodenav"><a href="#" class="linkdelista">Preguntas Frecuentes</a></li>
+                <li class="objetodenav"><a href="#" class="linkdelista">Ayuda</a></li>
+                <li class="objetodenavespecial"><a href="#" class="linkdelista">Administrador de peliculas</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
